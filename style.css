@@ -2,27 +2,212 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display';
 
 }
 
+/* Img di sfondo per la pagina */
+main{
+  background-image: url("img/traintravel.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.ContainerCategorie{
+  display: flex;
+
+}
+
+
+h3{
+  color: black;
+}
+
+/* Tutto al centro della pagina */
+.centralapagina{
+  margin: 0 25%;
+}
+/* Titolo e i suoi attributi  */
+.titolo{
+  height: 70px;
+  width: 100%;
+
+}
 
 
 #infoInpunt{
-  height: 300px ;
+  height: 77px ;
   width :100%;
-  background-color: black;
+  /* background-color: white ; */
   color: white ;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 10px rgba(#888888, 0.08);
+  border-radius: 10px;
 }
 
-#nke{
+/* proprietà 3 sotto Container */
+.contflexuno{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
-.centrailtitolo{
-  height: 100px;
-  width: 600px;
-  text-align: center;
-  background-color: red;
-  color:yellow;
+/* sezione passeggero */
+#allineapasseggero{
+  margin-left: 10px;
+  font-style: oblique;
+  font-size: 15px;
+  margin-bottom: 5px;
+
+}
+#nome{
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(162, 172, 8, 0.86);
+}
+#nome:focus{
+  color:Black;
+  background: rgba(139, 97, 4, 0.48);
+}
+/* SEZIONE KILOMETRI----------> */
+/* kilometri titolo */
+#allineakm{
+  margin-left: -55px;
+  font-style : oblique;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+/* inserimento kilometri */
+#km{
+  margin-left: -25px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(162, 172, 8, 0.86);
+}
+
+#km:focus{
+  background: rgba(139, 97, 4, 0.48);
+}
+/* SEZIONE Età----------------> */
+/* età scelta */
+#allineaeta{
+  margin-right: 10px;
+  font-style: oblique;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+/* scelta categoria età */
+#eta{
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(162, 172, 8, 0.86);
+}
+
+
+/* SEZIONE BOTTONI GENERA + ANNULLA -----------> */
+#infoOutput{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(20, 17, 173, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly ;
+  border: 1px solid rgba(133, 138, 140, 0.26);
+  border-radius : 10px;
+  font-size: 30px;
+  margin-top: 5px;
+}
+/* bottone genera biglietto*/
+#genera{
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+  border: 1px solid #9d9d9c;
+
+
+
+}
+#genera:hover{
+  background-color: rgba(144, 139, 7, 0.68);
+  color: white;
+  font-weight: bold;
+  padding: 18px;
+}
+/* bottone annulla biglietto(per farlo scomparire)*/
+#annulla{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9d9d9c;
+  width: 150px;
+}
+#annulla:hover{
+  background-color: rgba(144, 139, 7, 0.76);
+  color: white;
+  font-weight: bold;
+  padding: 18px;
+}
+
+
+/* SEZIONE BIGLIETTO ----------------------------------> */
+/* container principale biglietto */
+#scompari{
+  height: 300px;
+  width: 30%;
+  margin: 20px auto 0;
+  background-color: white;
+  border-radius: 16px;
+  display: none;
+
+}
+
+/* Passeggero Titolo */
+.bigliettoPassCarrCat{
+  font-style: oblique;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom:  1px solid gold;
+  margin-left: 5px;
+
+}
+/* dati var passeggero */
+#nomepass{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 3px;
+  font-family: 'Liu Jian Mao Ca';
+  margin-top: 15px;
+}
+
+/* dati var numero carrozza */
+#numerocarrozza{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 3px;
+  font-family: 'Liu Jian Mao Ca';
+  margin-top: 15px;
+}
+
+#costoviaggio{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 3px;
+  font-family: 'Liu Jian Mao Ca';
+  margin-top: 15px;
+}
+
+#categoria{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 3px;
+  font-family: 'Liu Jian Mao Ca';
+  margin-top: 15px;
 }

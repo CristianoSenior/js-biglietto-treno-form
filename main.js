@@ -41,7 +41,7 @@ function(){
   valnome = nomeUtente.value;
   valkm = kmUtente.value;
   valeta = etaUtente.value;
-
+  cancellarisult.style.display = "block";
   // Costo biglietto normale 0.21€ al km
   var costoBigliettoNormale = 0.21 * valkm;
 
@@ -57,19 +57,19 @@ function(){
 
   if ( valeta == "optuno" ) {
   prezzoDefinitivo = costoBigliettoBaby;
-  categoria = "minorenni";
+  prezzoDefinitivo = "minorenni";
 }else if (valeta == "optdue" ){
   prezzoDefinitivo = costoBigliettoSaggi;
-  categoria= "Saggi";
+  categoria = "Saggi";
 } else {
   prezzoDefinitivo = costoBigliettoNormale;
 
 
 }
-
-document.getElementById("numerocarrozza").innerHTML = Math.floor(Math.random()*10);
+console.log(valnome,valkm,valeta,categoria,prezzoDefinitivo);
+document.getElementById("numerocarrozza").innerHTML = Math.floor(Math.random()*10)+1;
 document.getElementById("nomepass").innerHTML = nomeUtente.value;
-document.getElementById("costoviaggio").innerHTML = "Il costo del biglietto è di " + prezzoDefinitivo + "€";
+document.getElementById("costoviaggio").innerHTML = Math.floor(prezzoDefinitivo);
 document.getElementById("categoria").innerHTML = categoria;
 }
 

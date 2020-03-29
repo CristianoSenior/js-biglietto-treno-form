@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
@@ -11,23 +13,32 @@
 
   <main>
     <div class="centralapagina">
-      <div class="centrailtitolo">
-
+      <div class="titolo">
         <h1>
           CALCOLA IL PREZZO DEL TUO BIGLIETTO
         </h1>
       </div>
-
       <div id="infoInpunt">
-          <input id="nome" type="text" name="" value="" placeholder="">
-          <input id="km" type="number" name="" value="">
+        <div class="contflexuno">
+          <h3 id="allineapasseggero">Nome Passeggero</h3>
+            <input  id="nome" type="text" name="" value="" placeholder="inserisci il tuo nome">
+        </div>
+        <div class="contflexuno">
+          <h3 id="allineakm">Scegli km</h3>
+          <input id="km" type="number" name="" value=""placeholder="Km?">
+        </div>
+
           <!-- <input id="eta" type="number" name="" value=""> -->
-          <select id="eta" name="">
-            <option value="optuno">Minorenni</option>
-            <option value="optdue">Over65</option>
-            <option value="opttre">Maggiorenni</option>
+        <div class="contflexuno">
+          <h3 id="allineaeta">Categoria / Età</h3>
+          <select id="eta" name="Categoria"placeholder="Categoria">
+            <option value="optuno">   --Minorenni--   </option>
+            <option value="optdue">   --Over65--   </option>
+            <option value="opttre">   --Maggiorenni--   </option>
           </select>
-      </div>
+        </div>
+
+        </div>
 
 
 
@@ -37,10 +48,26 @@
       </div>
 
       <div id="scompari">
-        <h2 id="numerocarrozza"></h2>
-        <h2 id="nomepass"></h2>
-        <h2 id="costoviaggio"></h2>
-        <h2 id="categoria"></h2>
+        <div class="bigliettoPassCarrCat">
+          <h3>PASSEGGERO:</h3>
+          <h4 id="nomepass"></h4>
+        </div>
+
+        <div class="bigliettoPassCarrCat">
+          <h3>N. CARROZZA:</h3>
+          <h3 id="numerocarrozza"></h3>
+        </div>
+
+        <div class="bigliettoPassCarrCat">
+          <h3>Costo € :</h3>
+          <h3 id="costoviaggio"></h3>
+        </div>
+
+
+        <div class="bigliettoPassCarrCat">
+          <h3>OFFERTA:</h3>
+          <h3 id="categoria"></h3>
+        </div>
       </div>
     </div>
 
